@@ -1,0 +1,134 @@
+Info: Starting: Create block symbol file (.bsf)
+Info: qsys-generate C:\Users\clone\Downloads\DE10_Standard_GHRD\DE10_Standard_GHRD\soc_system.qsys --block-symbol-file --output-directory=C:\Users\clone\Downloads\DE10_Standard_GHRD\DE10_Standard_GHRD\soc_system --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading DE10_Standard_GHRD/soc_system.qsys
+Progress: Reading input file
+Progress: Adding ILC [interrupt_latency_counter 25.1]
+Progress: Parameterizing module ILC
+Progress: Adding button_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module button_pio
+Progress: Adding clk_0 [clock_source 25.1]
+Progress: Parameterizing module clk_0
+Progress: Adding dipsw_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module dipsw_pio
+Progress: Adding f2sdram_only_master [altera_jtag_avalon_master 25.1]
+Progress: Parameterizing module f2sdram_only_master
+Progress: Adding fpga_only_master [altera_jtag_avalon_master 25.1]
+Progress: Parameterizing module fpga_only_master
+Progress: Adding hex0_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex0_pio
+Progress: Adding hex1_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex1_pio
+Progress: Adding hex2_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex2_pio
+Progress: Adding hex3_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex3_pio
+Progress: Adding hex4_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex4_pio
+Progress: Adding hex5_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex5_pio
+Progress: Adding hps_0 [altera_hps 25.1]
+Progress: Parameterizing module hps_0
+Progress: Adding hps_only_master [altera_jtag_avalon_master 25.1]
+Progress: Parameterizing module hps_only_master
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 25.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module led_pio
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 25.1]
+Progress: Parameterizing module mm_bridge_0
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 25.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: soc_system.hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: qsys-generate succeeded.
+Info: Finished: Create block symbol file (.bsf)
+Info: 
+Info: Starting: Create HDL design files for synthesis
+Info: qsys-generate C:\Users\clone\Downloads\DE10_Standard_GHRD\DE10_Standard_GHRD\soc_system.qsys --synthesis=VERILOG --output-directory=C:\Users\clone\Downloads\DE10_Standard_GHRD\DE10_Standard_GHRD\soc_system\synthesis --family="Cyclone V" --part=5CSXFC6D6F31C6
+Progress: Loading DE10_Standard_GHRD/soc_system.qsys
+Progress: Reading input file
+Progress: Adding ILC [interrupt_latency_counter 25.1]
+Progress: Parameterizing module ILC
+Progress: Adding button_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module button_pio
+Progress: Adding clk_0 [clock_source 25.1]
+Progress: Parameterizing module clk_0
+Progress: Adding dipsw_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module dipsw_pio
+Progress: Adding f2sdram_only_master [altera_jtag_avalon_master 25.1]
+Progress: Parameterizing module f2sdram_only_master
+Progress: Adding fpga_only_master [altera_jtag_avalon_master 25.1]
+Progress: Parameterizing module fpga_only_master
+Progress: Adding hex0_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex0_pio
+Progress: Adding hex1_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex1_pio
+Progress: Adding hex2_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex2_pio
+Progress: Adding hex3_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex3_pio
+Progress: Adding hex4_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex4_pio
+Progress: Adding hex5_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module hex5_pio
+Progress: Adding hps_0 [altera_hps 25.1]
+Progress: Parameterizing module hps_0
+Progress: Adding hps_only_master [altera_jtag_avalon_master 25.1]
+Progress: Parameterizing module hps_only_master
+Progress: Adding jtag_uart [altera_avalon_jtag_uart 25.1]
+Progress: Parameterizing module jtag_uart
+Progress: Adding led_pio [altera_avalon_pio 25.1]
+Progress: Parameterizing module led_pio
+Progress: Adding mm_bridge_0 [altera_avalon_mm_bridge 25.1]
+Progress: Parameterizing module mm_bridge_0
+Progress: Adding sysid_qsys [altera_avalon_sysid_qsys 25.1]
+Progress: Parameterizing module sysid_qsys
+Progress: Building connections
+Progress: Parameterizing connections
+Progress: Validating
+Progress: Done reading input file
+Info: soc_system.button_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.dipsw_pio: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: soc_system.hps_0: HPS Main PLL counter settings: n = 0  m = 73
+Info: soc_system.hps_0: HPS peripherial PLL counter settings: n = 0  m = 39
+Warning: soc_system.hps_0: "Configuration/HPS-to-FPGA user 0 clock frequency" (desired_cfg_clk_mhz) requested 100.0 MHz, but only achieved 97.368421 MHz
+Warning: soc_system.hps_0: "QSPI clock frequency" (desired_qspi_clk_mhz) requested 400.0 MHz, but only achieved 370.0 MHz
+Warning: soc_system.hps_0: 1 or more output clock frequencies cannot be achieved precisely, consider revising desired output clock frequencies.
+Warning: soc_system.hps_0: HPS model no longer supports simulation for HPS FPGA Bridges.
+Info: soc_system.jtag_uart: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: soc_system.sysid_qsys: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: soc_system.sysid_qsys: Time stamp will be automatically updated when this component is generated.
+Info: soc_system: Generating "soc_system" for QUARTUS_SYNTH
+Error: hex2_pio_s1_translator.avalon_anti_slave_0: Cannot connect hex2_pio_s1_translator.reset because hex2_pio.reset is not connected. If hex2_pio.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: hex1_pio_s1_translator.avalon_anti_slave_0: Cannot connect hex1_pio_s1_translator.reset because hex1_pio.reset is not connected. If hex1_pio.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: hex3_pio_s1_translator.avalon_anti_slave_0: Cannot connect hex3_pio_s1_translator.reset because hex3_pio.reset is not connected. If hex3_pio.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: hex4_pio_s1_translator.avalon_anti_slave_0: Cannot connect hex4_pio_s1_translator.reset because hex4_pio.reset is not connected. If hex4_pio.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: hex5_pio_s1_translator.avalon_anti_slave_0: Cannot connect hex5_pio_s1_translator.reset because hex5_pio.reset is not connected. If hex5_pio.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Error: hex0_pio_s1_translator.avalon_anti_slave_0: Cannot connect hex0_pio_s1_translator.reset because hex0_pio.reset is not connected. If hex0_pio.reset is exported, connect it to a reset bridge and export the bridge's reset input instead.
+Info: Interconnect is inserted between master hps_0.h2f_lw_axi_master and slave mm_bridge_0.s0 because the master is of type axi and the slave is of type avalon.
+Info: Interconnect is inserted between master hps_only_master.master and slave hps_0.f2h_axi_slave because the master is of type avalon and the slave is of type axi.
+Info: Interconnect is inserted between master f2sdram_only_master.master and slave hps_0.f2h_sdram0_data because the master has address signal 32 bit wide, but the slave is 27 bit wide.
+Info: Interconnect is inserted between master f2sdram_only_master.master and slave hps_0.f2h_sdram0_data because the master has readdata signal 32 bit wide, but the slave is 256 bit wide.
+Info: Interconnect is inserted between master f2sdram_only_master.master and slave hps_0.f2h_sdram0_data because the master has writedata signal 32 bit wide, but the slave is 256 bit wide.
+Info: Interconnect is inserted between master f2sdram_only_master.master and slave hps_0.f2h_sdram0_data because the master has byteenable signal 4 bit wide, but the slave is 32 bit wide.
+Warning: hps_0.f2h_irq0: Cannot connect clock for irq_mapper_001.sender
+Warning: hps_0.f2h_irq0: Cannot connect reset for irq_mapper_001.sender
+Warning: hps_0.f2h_irq1: Cannot connect clock for irq_mapper_002.sender
+Warning: hps_0.f2h_irq1: Cannot connect reset for irq_mapper_002.sender
+Error: Generation stopped, 26 or more modules remaining
+Info: soc_system: Done "soc_system" with 19 modules, 1 files
+Error: qsys-generate failed with exit code 1: 7 Errors, 8 Warnings
+Info: Finished: Create HDL design files for synthesis
